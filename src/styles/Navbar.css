@@ -1,0 +1,35 @@
+#navbar-style {
+  background-color: rgba(39, 39, 40, 1);
+  height: 7dvh;
+  height: 7svh;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav-item {
+  color: white;
+  margin: 15px;
+  text-decoration: none;
+  font-size: large;
+}
+
+.nav-item.a {
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  color: rgb(186, 218, 243);
+}
+
+.nav-item.active {
+  font-weight: 500;
+  color: rgb(186, 218, 243);
+}
+
+.logo {
+  height: 60px;
+}
+
+.navbar-toggler {
+  color: white;
+}
