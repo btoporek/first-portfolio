@@ -1,18 +1,2 @@
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-.home {
-  background: 
-  /* top, transparent red, faked with gradient */ linear-gradient(
-      rgba(114, 108, 108, 0.5),
-      rgba(114, 108, 108, 0.5)
-    ),
-    /* bottom, image */ url("../src/images/background.jpg");
-  height: 93vh;
-  height: 93svh;
-  background-position: 50% 55%;
-  background-repeat: no-repeat;
-  background-size: cover;
+@media only screen and (max-width: 700px) {
 }

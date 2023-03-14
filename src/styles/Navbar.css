@@ -1,20 +1,24 @@
 #navbar-style {
-  background-color: rgba(39, 39, 40, 1);
-  height: 7dvh;
-  height: 7svh;
+  background: transparent;
   padding-left: 20px;
   padding-right: 20px;
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+  justify-content: center;
 }
 
 .nav-item {
+  text-align: center;
   color: white;
   margin: 15px;
   text-decoration: none;
-  font-size: large;
+  font-size: 1.5em;
 }
 
 .nav-item.a {
   text-decoration: none;
+  text-align: center;
 }
 
 .nav-item:hover {
@@ -30,6 +34,9 @@
   height: 60px;
 }
 
-.navbar-toggler {
-  color: white;
+@media only screen and (max-width: 700px) {
+  #navbar-style {
+    float: right;
+    flex-direction: column;
+  }
 }

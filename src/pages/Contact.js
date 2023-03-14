@@ -1,11 +1,8 @@
 import React from "react";
+import "../styles/Contact.css";
 
 function Contact() {
-  return (
-    <div>
-      <h1>Contact</h1>
-    </div>
-  );
+  return <div className="contact"></div>;
 }
 
 export default Contact;
