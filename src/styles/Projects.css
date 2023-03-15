@@ -4,10 +4,100 @@
       rgba(114, 108, 108, 0.3),
       rgba(114, 108, 108, 0.3)
     ),
-    /* bottom, image */ url("../images/desk3.jpg");
+    /* bottom, image */ url("../assets/desk3.jpg");
   height: 100vh;
   height: 100svh;
   background-position: 60% 45%;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-block-start: 5%;
+}
+
+#projects-container {
+  margin-block-start: 5%;
+  display: inline;
+}
+
+.carousel {
+  z-index: 5;
+  text-align: center;
+  align-items: center;
+  padding-block-start: 3%;
+  height: 75vh;
+  background-color: rgba(114, 108, 108, 0.3);
+}
+
+.carousel-caption {
+  height: 15vh;
+}
+
+.carousel-item-name {
+  color: white;
+  font-size: 2em;
+  margin-block-end: 1%;
+}
+
+.embed-responsive-item {
+  height: 45vh;
+  width: 45%;
+}
+
+.carousel-item {
+  text-align: center;
+  height: 65vh;
+  height: 65svh;
+}
+
+.carousel-caption p {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1400px) {
+  .carousel {
+    height: 80vh;
+  }
+
+  .carousel-caption {
+    height: 25%;
+  }
+
+  .embed-responsive-item {
+    height: 50vh;
+    width: 50%;
+    padding-block-end: 1%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.8rem;
+    margin: 0 0;
+  }
+
+  .carousel-indicators {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .carousel-caption {
+    padding-block-end: 0%;
+    overflow: auto;
+  }
+
+  .embed-responsive-item {
+    height: 45vh;
+    width: 50%;
+    padding-block-end: 2%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.5rem;
+  }
 }

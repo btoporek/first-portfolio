@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/About.css";
-import pictureofme from "../images/pictureofme.png";
+import pictureofme from "../assets/pictureofme.png";
 import { AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
 
 function About() {
@@ -14,7 +14,7 @@ function About() {
 
           <h6 className="card-subtitle">
             {" "}
-            Educator turned web developer in Surpise, Arizona.
+            Educator turned front-end developer in Surprise, Arizona.
           </h6>
           <a
             href="https://github.com/btoporek"
@@ -41,7 +41,7 @@ function About() {
             variety of new things including how to work with JavaScript, JQuery,
             AJAX, React, RESTful APIs, HTML5, CSS3, Bootstrap, and more. While
             these are the things I have learned thus far, I have ambitious goals
-            to continue learning more about frontend libraries and frameworks
+            to continue learning more about front-end libraries and frameworks
             and am always open to learning new things.
           </p>
         </div>

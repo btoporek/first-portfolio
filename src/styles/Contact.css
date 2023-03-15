@@ -4,7 +4,7 @@
       rgba(114, 108, 108, 0.3),
       rgba(114, 108, 108, 0.3)
     ),
-    /* bottom, image */ url("../images/desk3.jpg");
+    /* bottom, image */ url("../assets/desk3.jpg");
   height: 100vh;
   height: 100svh;
   background-position: 60% 45%;
