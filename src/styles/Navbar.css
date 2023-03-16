@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Sora:wght@200;400;500&family=Urbanist:wght@300;500;600;700&display=swap");
+
 #navbar-style {
   background: transparent;
   padding-left: 20px;
@@ -13,7 +15,9 @@
   color: white;
   margin: 15px;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.4em;
+  font-family: "Sora", sans-serif;
+  font-weight: 200;
 }
 
 .nav-item.a {
@@ -34,9 +38,9 @@
   height: 60px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .nav-item {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   .logo {

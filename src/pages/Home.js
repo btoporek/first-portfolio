@@ -1,6 +1,4 @@
 import "../styles/Home.css";
-import background1 from "../assets/background1.mp4";
-import background2 from "../assets/background2.mp4";
 import desertvideo from "../assets/desertvideo.mp4";
 import React from "react";
 
@@ -15,9 +13,7 @@ function Home() {
         <div className="hero-overlay"></div>
         <div className="hero-text">
           <h1> Hi, I'm Brittni Toporek</h1>
-          <p className="intro-p">
-            Front-end Developer from the heart of Arizona
-          </p>
+          <p className="intro-p">Front-End Developer from Arizona</p>
         </div>
       </div>
     </>

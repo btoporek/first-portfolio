@@ -1,13 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Sora:wght@200;400;500&family=Urbanist:wght@300;500;600;700&display=swap");
+
+body {
+  background: none;
+}
+
 .contact {
-  background: 
-        /* top, transparent red, faked with gradient */ linear-gradient(
+  background-image:
+  /* top, transparent red, faked with gradient */ linear-gradient(
       rgba(114, 108, 108, 0.3),
       rgba(114, 108, 108, 0.3)
     ),
     /* bottom, image */ url("../assets/desk3.jpg");
+  background-attachment: fixed;
   height: 100vh;
   height: 100svh;
-  background-position: 60% 45%;
+  background-position: center;
+  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-block-start: 7%;
+}
+
+.contact-heading {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 400;
+}
+
+#contact-form {
+  background-color: rgb(250, 248, 248, 0.5);
+  padding-block-start: 1%;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.form-label {
+  margin-block-end: 2px;
+}
+
+.form-entry {
+  margin-block-end: 1%;
+}
+
+#form-button {
+  margin-block-start: 1%;
+  margin-block-end: 3%;
+  background-color: rgb(99, 113, 134);
+  border: 1px solid rgb(91, 104, 123);
+}
+
+#form-button:hover {
+  background-color: rgb(133, 151, 179);
+}
+
+@media only screen and (max-width: 1400px) {
+  .contact {
+    background-size: cover;
+    height: 900px;
+    padding-block-start: 10%;
+  }
+
+  #contact-form {
+    padding-block-start: 1%;
+    width: 40%;
+    border-radius: 5px;
+  }
 }

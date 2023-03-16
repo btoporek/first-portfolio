@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Sora:wght@200;400;500&family=Urbanist:wght@300;500;600;700&display=swap");
+
 .about {
   background: 
     /* top, transparent red, faked with gradient */ linear-gradient(
@@ -12,7 +14,7 @@
   background-size: cover;
 }
 
-.card {
+#about-underlay {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,13 +25,16 @@
 }
 
 .card-title {
-  font-size: 40px;
+  font-size: 45px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
 }
 
 .card-subtitle {
   font-size: 25px;
   font-style: oblique;
   margin-top: 10px;
+  font-family: "Urbanist", sans-serif;
 }
 
 p {
@@ -39,7 +44,7 @@ p {
 }
 
 .my-photo {
-  height: 200px;
+  height: 220px;
   border-radius: 20%;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -72,4 +77,43 @@ p {
   text-decoration: none;
   color: rgb(192, 189, 189);
   outline-color: #000000;
+}
+
+@media only screen and (max-width: 1400px) {
+  #about-underlay {
+    height: 80vh;
+    padding-block-end: 1%;
+  }
+
+  .card-title {
+    font-size: 5vh;
+  }
+
+  .card-subtitle {
+    font-size: 3vh;
+    font-style: oblique;
+    margin-top: 10px;
+    font-family: "Urbanist", sans-serif;
+  }
+
+  p {
+    font-size: 2.5vh;
+    margin-block-start: 2px;
+  }
+
+  .my-photo {
+    height: 15vh;
+    margin-block-end: 2px;
+    margin-block-start: 2px;
+  }
+
+  .github {
+    font-size: 5vh;
+    margin-block-end: 2px;
+  }
+
+  .linkedin {
+    font-size: 5vh;
+    margin-block-end: 2px;
+  }
 }

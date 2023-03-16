@@ -4,7 +4,7 @@
       rgba(114, 108, 108, 0.3),
       rgba(114, 108, 108, 0.3)
     ),
-    /* bottom, image */ url("../assets/desk3.jpg");
+    /* bottom, image */ url("../assets/desk4.jpg");
   height: 100vh;
   height: 100svh;
   background-position: 60% 45%;
@@ -22,24 +22,37 @@
   z-index: 5;
   text-align: center;
   align-items: center;
-  padding-block-start: 3%;
+  padding-block-start: 2%;
   height: 75vh;
   background-color: rgba(114, 108, 108, 0.3);
 }
 
 .carousel-caption {
-  height: 15vh;
+  height: 19vh;
 }
 
 .carousel-item-name {
   color: white;
   font-size: 2em;
-  margin-block-end: 1%;
+  vertical-align: middle;
+  margin-block-end: 0;
+}
+
+a.project-github {
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  margin-block-start: 0;
+  padding-block-start: 0;
+}
+
+.project-github:hover {
+  color: rgb(192, 190, 190);
 }
 
 .embed-responsive-item {
   height: 45vh;
-  width: 45%;
+  width: 40%;
 }
 
 .carousel-item {
@@ -50,6 +63,7 @@
 
 .carousel-caption p {
   text-align: center;
+  margin-block-end: 0;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -58,26 +72,35 @@
   }
 
   .carousel-caption {
-    height: 25%;
+    padding-block-start: 5px;
+    padding-block-end: 0;
+    margin: 0;
   }
 
   .embed-responsive-item {
-    height: 50vh;
-    width: 50%;
-    padding-block-end: 1%;
+    height: 40vh;
+    width: 30%;
   }
 
   .carousel-caption h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .carousel-caption p {
     font-size: 0.8rem;
-    margin: 0 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    z-index: 10;
   }
 
   .carousel-indicators {
     margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  a.project-github {
+    font-size: 0.9rem;
   }
 }
 
