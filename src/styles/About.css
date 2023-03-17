@@ -80,6 +80,11 @@ p {
 }
 
 @media only screen and (max-width: 1400px) {
+  .about {
+    background-size: cover;
+    height: 900px;
+  }
+
   #about-underlay {
     height: 80vh;
     padding-block-end: 1%;
