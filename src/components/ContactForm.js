@@ -1,10 +1,11 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -26,6 +27,7 @@ const ContactForm = () => {
         }
       );
     e.target.reset();
+    setIsSubmitted(true);
   };
 
   return (
@@ -66,6 +68,7 @@ const ContactForm = () => {
           Send Message
         </Button>
       </Form>
+      {isSubmitted ? <p id="message-sent">Message Sent!</p> : null}
     </div>
   );
 };
