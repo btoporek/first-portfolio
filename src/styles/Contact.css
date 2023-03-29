@@ -52,6 +52,13 @@ body {
   background-color: rgb(133, 151, 179);
 }
 
+#message-sent {
+  text-align: center;
+  padding-block-end: 2%;
+  font-weight: 500;
+  font-size: 2vh;
+}
+
 @media only screen and (max-width: 1400px) {
   .contact {
     background-size: cover;
