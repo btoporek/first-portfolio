@@ -9,9 +9,17 @@ function ProjectsCarousel() {
     <Carousel className="carousel">
       {VideoData.map((video, index) => (
         <Carousel.Item className="carousel-item" key={index}>
-          <Carousel.Caption className="carousel-caption">
+          <div className="video-wrapper">
+            <iframe
+              className="embed-responsive-item"
+              src={video.source}
+              title={video.name}
+              allowFullScreen
+            ></iframe>
+          </div>
+          <div className="projects-description">
             <h3 className="carousel-item-name">{video.name}</h3>
-            <p>
+            <p className="projects-p">
               {video.description}
               <br />
               <a
@@ -23,18 +31,6 @@ function ProjectsCarousel() {
                 <AiFillGithub />
               </a>
             </p>
-          </Carousel.Caption>
-          <div className="embed-responsive embed-responsive-16by9">
-            <div className="video-wrapper">
-              <iframe
-                width="560"
-                height="349"
-                className="embed-responsive-item"
-                src={video.source}
-                title={video.name}
-                allowFullScreen
-              ></iframe>
-            </div>
           </div>
         </Carousel.Item>
       ))}
