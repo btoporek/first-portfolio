@@ -19,39 +19,40 @@
   flex-direction: column;
   align-items: center;
   top: 15%;
+  height: fit-content;
   background-color: rgba(25, 29, 28, 0.85);
   text-align: center;
   color: white;
 }
 
 .card-title {
-  font-size: 45px;
+  font-size: 4.5vh;
   font-family: "Urbanist", sans-serif;
   font-weight: 500;
 }
 
 .card-subtitle {
-  font-size: 25px;
+  font-size: 2.5vh;
   font-style: oblique;
-  margin-top: 10px;
+  margin-block-start: 1%;
   font-family: "Urbanist", sans-serif;
 }
 
 p {
-  font-size: 18px;
-  margin-top: 10px;
+  font-size: 2vh;
+  margin-block-start: 1%;
   text-align: justify;
 }
 
 .my-photo {
-  height: 220px;
+  height: 22vh;
   border-radius: 20%;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
 .linkedin {
-  font-size: 50px;
+  font-size: 5vh;
   background: transparent;
   border: transparent;
   vertical-align: middle;
@@ -65,7 +66,7 @@ p {
 }
 
 .github {
-  font-size: 50px;
+  font-size: 5vh;
   background: transparent;
   border: transparent;
   vertical-align: middle;
@@ -82,43 +83,6 @@ p {
 @media only screen and (max-width: 1400px) {
   .about {
     background-size: cover;
-    height: 900px;
-  }
-
-  #about-underlay {
-    height: 80vh;
-    padding-block-end: 1%;
-  }
-
-  .card-title {
-    font-size: 5vh;
-  }
-
-  .card-subtitle {
-    font-size: 3vh;
-    font-style: oblique;
-    margin-top: 10px;
-    font-family: "Urbanist", sans-serif;
-  }
-
-  p {
-    font-size: 2.5vh;
-    margin-block-start: 2px;
-  }
-
-  .my-photo {
-    height: 15vh;
-    margin-block-end: 2px;
-    margin-block-start: 2px;
-  }
-
-  .github {
-    font-size: 5vh;
-    margin-block-end: 2px;
-  }
-
-  .linkedin {
-    font-size: 5vh;
-    margin-block-end: 2px;
+    height: 150vh;
   }
 }

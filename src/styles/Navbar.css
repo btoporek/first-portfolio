@@ -2,8 +2,8 @@
 
 #navbar-style {
   background: transparent;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
   z-index: 999;
   position: absolute;
   width: 100%;
@@ -15,7 +15,8 @@
   color: white;
   margin: 15px;
   text-decoration: none;
-  font-size: 1.4em;
+  font-size: 2.5vh;
+  font-size: 2.5svh;
   font-family: "Sora", sans-serif;
   font-weight: 200;
 }
@@ -35,10 +36,11 @@
 }
 
 .logo {
-  height: 60px;
+  height: 6vh;
+  height: 6svh;
 }
 
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
   .nav-item {
     font-size: 0.9em;
   }
@@ -56,4 +58,4 @@
   .logo {
     height: 2.3em;
   }
-}
+} */
