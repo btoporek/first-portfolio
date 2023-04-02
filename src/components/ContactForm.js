@@ -34,7 +34,7 @@ const ContactForm = () => {
     <div className="container" id="contact-form">
       <h2 className="contact-heading">Contact Me</h2>
       <Form ref={form} onSubmit={sendEmail}>
-        <Form.Group>
+        <Form.Group id="form-group">
           <Form.Label className="form-label">Name</Form.Label>
           <Form.Control
             type="text"
@@ -59,9 +59,10 @@ const ContactForm = () => {
           <Form.Label>Message</Form.Label>
           <Form.Control
             as="textarea"
-            rows={7}
+            rows={10}
             name="message"
             placeholder="Type your message here"
+            className="message"
           />
         </Form.Group>
         <Button className="form-control" id="form-button" type="submit">
