@@ -140,3 +140,9 @@ a.project-github {
     margin-block-start: 6vh;
   }
 }
+
+@media only screen and (max-height: 200px) {
+  .projects {
+    height: 300px;
+  }
+}

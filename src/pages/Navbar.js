@@ -28,7 +28,9 @@ function Navbar() {
         </li>
       </ul>
       <span className="navbar-text">
-        <img className="logo" src={logo3} alt="logo" />
+        <NavLink to="/" className="nav-item">
+          <img className="logo" src={logo3} alt="logo" />
+        </NavLink>
       </span>
     </nav>
   );
