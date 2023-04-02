@@ -5,8 +5,10 @@ import "../styles/Projects.css";
 function Projects() {
   return (
     <div className="projects">
-      <div className="container" id="projects-container">
-        <ProjectsCarousel />
+      <div className="projects-underlay">
+        <div className="container" id="projects-container">
+          <ProjectsCarousel />
+        </div>
       </div>
     </div>
   );

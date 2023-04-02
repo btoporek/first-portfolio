@@ -11,34 +11,31 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-block-start: 5%;
-  /* display: flex;
-  flex-direction: column; */
 }
 
 #projects-container {
-  margin-block-start: 3%;
   width: 100%;
   display: inline;
+}
+
+.projects-underlay {
+  background-color: rgba(114, 108, 108, 0.4);
+  min-height: 75vh;
+  height: max-content;
+  margin-block-start: 3vh;
 }
 
 .carousel {
   z-index: 5;
   text-align: center;
   align-items: center;
-  padding-block-start: 2%;
-  height: 75vh;
-  background-color: rgba(114, 108, 108, 0.4);
-}
-
-.carousel-caption {
-  height: auto;
 }
 
 .carousel-item-name {
   color: white;
   font-size: 3vh;
   vertical-align: middle;
-  margin-block-end: 0;
+  margin-block-end: 1vh;
 }
 
 a.project-github {
@@ -53,23 +50,28 @@ a.project-github {
   color: rgb(192, 190, 190);
 }
 
+.video-wrapper {
+  height: 45vh;
+  width: 75vh;
+  margin: auto;
+}
+
 .embed-responsive-item {
-  height: 40vh;
-  width: 65vh;
+  width: 100% !important;
+  height: 100% !important;
   margin-block-start: 1%;
 }
 
 .carousel-item {
   text-align: center;
   color: white;
-  /* height: 65vh;
-  height: 65svh; */
 }
 
 .projects-description {
   text-align: center;
-  margin-inline: 15% 15%;
+  margin-inline: 25vw;
   color: white;
+  margin-block-start: 2vh;
 }
 
 .projects-p {
@@ -77,107 +79,64 @@ a.project-github {
   font-size: 2vh;
 }
 
-@media only screen and (max-width: 992px) {
-  .carousel-item-name {
-    font-size: 3vh;
-  }
-
-  .carousel {
-    height: 80vh;
-  }
+.carousel-indicators {
+  position: relative;
 }
 
-@media only screen and (max-width: 768px) {
-  .carousel {
-    height: 85vh;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .carousel {
-    height: 80vh;
+@media only screen and (max-width: 1100px) {
+  .video-wrapper {
+    height: 30vh;
+    width: 55vh;
+    margin: auto;
   }
 
-  .carousel-item-name {
-    font-size: 3vh;
-  }
-
-  .projects-p {
-    font-size: 2vh;
-  }
-
-  .embed-responsive-item {
-    height: 25vh;
-    width: 40vh;
-    margin-block-start: 15%;
-  }
-
-  #projects-container {
-    margin-block-start: 10%;
-  }
-}
-
-/* 
-@media only screen and (max-width: 1400px) {
-  .projects {
-    background-size: cover;
-    height: 900px;
-  }
-
-  .carousel {
-    height: 80vh;
-  }
-
-  .carousel-caption {
-    padding-block-start: 5px;
-    padding-block-end: 0;
-    margin: 0;
-  }
-
-  .embed-responsive-item {
-    height: 40vh;
-    width: 30%;
-  }
-
-  .carousel-caption h3 {
-    font-size: 1rem;
-  }
-
-  .carousel-caption p {
-    font-size: 0.8rem;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    z-index: 10;
-  }
-
-  .carousel-indicators {
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-  a.project-github {
-    font-size: 0.9rem;
+  .projects-underlay {
+    margin-block-start: 4vh;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .carousel-caption {
-    padding-block-end: 0%;
-    overflow: auto;
+  .video-wrapper {
+    height: 25vh;
+    width: 45vh;
+    margin: auto;
   }
 
-  .embed-responsive-item {
-    height: 40vh;
-    width: 35%;
-    padding-block-end: 4%;
+  .projects-underlay {
+    margin-block-start: 5vh;
+    min-height: 65vh;
   }
 
-  .carousel-caption h3 {
-    font-size: 1rem;
+  .carousel-item-name {
+    font-size: 2.5vh;
   }
 
-  .carousel-caption p {
-    font-size: 0.5rem;
+  .projects-p {
+    font-size: 1.5vh;
   }
-} */
+}
+
+@media only screen and (max-width: 650px) {
+  .video-wrapper {
+    height: 20vh;
+    width: 35vh;
+    margin: auto;
+  }
+
+  .projects-underlay {
+    margin-block-start: 5vh;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .video-wrapper {
+    height: 15vh;
+    width: 25vh;
+    margin: auto;
+  }
+
+  .projects-underlay {
+    min-height: 60vh;
+    margin-block-start: 6vh;
+  }
+}
