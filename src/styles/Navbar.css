@@ -38,3 +38,9 @@
   height: 6vh;
   height: 6svh;
 }
+
+@media only screen and (max-width: 500px) {
+  .nav-item {
+    font-size: 2vh;
+  }
+}
